@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 1000px;
+    background-color: #ccc;
+    perspective: 1000px;
+}
+
+
+ul {
+    width: 100%;
+    position: relative;
+    top: 30%;
+    left: 20%;
+    font-size: 40px;
+    list-style: none;
+    display: flex;
+    transition: 0.5s;
+    
+}
+
+li {
+    margin-left: 100px;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 80px;
+    transform: rotate(-30deg) skew(25deg);
+    box-shadow: -20px 20px 10px #000;
+    transition: 0.5s;
+}
+
+a {
+    color: black;
+    transition: 0.5s;
+}
+
+li::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    background-color: #919294;
+    width: 20px;
+    height: 80px;
+    transform: rotateY(0deg) skewY(-45deg);
+    transition: 0.5s;
+    
+}
+
+
+li::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    bottom: -20px;
+    left: -10px;
+    background-color: #919294;
+    transform: rotateY(0deg) skewX(-45deg);
+    transition: 0.5s;
+}
+
+ul li:hover {
+    transform: rotate(-30deg) skew(25deg) translate(20px, -20px);
+    box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.502);
+}
+
+
+h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    transform: rotate(-30deg) skew(25deg);
+    text-shadow: -4px 4px 0px rgba(0, 0, 0, 0.89);
+}
+
+.fab {
+    transition: 0.5s;
+}
+
+li:nth-child(1):hover {
+        background: linear-gradient(90deg, rgba(38,37,108,1) 31%, rgba(208,32,32,1) 32%, rgba(200,37,33,1) 69%, rgba(42,126,57,1) 70%);
+        transition: 0.5s;
+}
+
+li:hover:nth-child(1)::after {
+        background: linear-gradient(90deg, rgba(38,37,108,1) 31%, rgba(208,32,32,1) 32%, rgba(200,37,33,1) 69%, rgba(42,126,57,1) 70%);
+        transition: 0.5s;
+}
+
+li:hover:nth-child(1)::before {
+        background: linear-gradient(0deg, rgba(38,37,108,1) 100%, rgba(42,126,57,1) 100%);
+        transition: 0.5s;
+}
+
+li:hover .fab {
+    color: white;
+    transition: 0.5s;
+}
+
+li:nth-child(2):hover {
+    background-color: #1f1f1f
+}
+
+li:hover:nth-child(2)::after {
+    background-color: #1f1f1f
+}
+
+li:hover:nth-child(2)::before {
+    background-color: #1f1f1f
+}
+
+li:nth-child(3):hover {
+    background: linear-gradient(90deg, rgba(228,0,26,1) 40%, rgba(247,92,0,1) 41%, rgba(241,141,21,1) 60%, rgba(239,153,26,1) 61%);
+}
+
+li:hover:nth-child(3)::after {
+    background: linear-gradient(90deg, rgba(228,0,26,1) 40%, rgba(247,92,0,1) 41%, rgba(241,141,21,1) 60%, rgba(239,153,26,1) 61%);
+}
+
+li:hover:nth-child(3)::before {
+    background: linear-gradient(90deg, rgba(228,0,26,1) 100%, rgba(239,153,26,1) 100%, rgba(241,141,21,1) 100%, rgba(247,92,0,1) 100%);
+}
+
+li:nth-child(4):hover {
+    background-color: #161A60; 
+}
+
+li:hover:nth-child(4):after {
+    background-color: #161A60; 
+}
+
+li:hover:nth-child(4):before {
+    background-color: #161A60; 
+}
+
+li:nth-child(5):hover {
+   background: linear-gradient(129deg, rgba(0,43,134,1) 49%, rgba(0,150,218,1) 50%);
+}
+
+li:hover:nth-child(5):after {
+    background: linear-gradient(90deg, rgba(0,43,134,1) 8%, rgba(0,150,218,1) 9%);
+}
+
+li:hover:nth-child(5):before {
+   background: linear-gradient(90deg, rgba(0,43,134,1) 100%, rgba(0,150,218,1) 100%); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
